@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+   <p> Editer le potin </p>
+   <form action='/gossips/<%= id%>/edit/' method='POST'>
+    <input id= 'author' value= 'author' type='radio' name= 'gossip_attribute'>Author
+    <input id= 'content' value= 'content' type='radio' name= 'gossip_attribute'>Content
+
+    <input type='text' name='info_to_update' required>
+   
+   <button type="submit">Submit</button></br>
+   <a href='/' > retour </a>
+   </form>
+  </body>
+</html>
